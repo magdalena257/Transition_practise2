@@ -35,15 +35,18 @@
             position: absolute;
             right: 0;
             bottom: 0;
-            height: 10px;
-            width: 10px;
-            transition: 10s;
-            background-color: black;
+            height: 15px;
+            width: 15px;
+            background-color: brown;
+            border-radius: 0;
+            transition: right 10s, border-radius 7s ease 3s, bottom 10s ease 1s, background-color 7s ease 3s;
         }
 
         button:hover+.square {
             right: calc(100% - 10px);
             bottom: calc(100% - 10px);
+            border-radius: 50%;
+            background-color: goldenrod;
 
         }
     </style>
