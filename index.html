@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zadanie 2 - przemieszczenie kwadratu</title>
+    <link href="https://fonts.googleapis.com/css?family=Saira" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        button {
+            padding: 7px 30px;
+            font-family: 'Saira', sans-serif;
+            font-size: 20px;
+            position: absolute;
+            top: 10vh;
+            left: calc(50vw - 70px);
+            background-color: #555;
+            color: bisque;
+            border: 3px solid #3e4147;
+            cursor: pointer;
+        }
+
+        body {
+            background-color: #a8b1c1;
+        }
+
+        .square {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            height: 10px;
+            width: 10px;
+            transition: 10s;
+            background-color: black;
+        }
+
+        button:hover+.square {
+            right: calc(100% - 10px);
+            bottom: calc(100% - 10px);
+
+        }
+    </style>
+</head>
+
+<body>
+    <button>Hover me!</button>
+    <div class="square"></div>
+</body>
+
+</html>
